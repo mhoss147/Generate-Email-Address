@@ -23,6 +23,10 @@ public class Email {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		
+		// Print to console
+		
+		System.out.println("Email created: "+ this.firstName + " " + this.lastName);
+		
 	}
 	
 	
