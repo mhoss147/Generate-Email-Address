@@ -14,6 +14,36 @@ public class Email {
 	private String alternateEmail;
 	
 	
+	// Constructor to receive the first name and last name
+	
+	public Email(String firstName, String lastName) {
+		
+		// this refer to class level variables and other one is local
+		
+		this.firstName = firstName;
+		this.lastName = lastName;
+		
+	}
+	
+	
+	
+	
+	// Ask for the department
+	
+	
+	// Generate the random password
+	
+
+	// Set the mailbox capacity
+	
+	
+	// Set the alternate email
+	
+	
+	// Change the password
+
+
+	
 	
 
 }
