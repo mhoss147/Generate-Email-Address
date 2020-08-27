@@ -26,21 +26,22 @@ public class Email {
 		
 		
 		// Print to console		
-		System.out.println("Email created: "+ this.firstName + " " + this.lastName);
+		System.out.println("EMAIL CREATED: "+ this.firstName + " " + this.lastName + "\n");
 		
 		
 		// Call a method asking for dept and return the dept
-		this.department = setDepartment();		
+		this.department = setDepartment();	
+		System.out.println("Department: " + this.department);
 		
 	}
 	
 	
 	
 	
-	// Ask for the department, Don't want a public method
+	// Ask for the department (Don't want a public method) and define it
 	private String setDepartment() {
 		
-		System.out.print("Enter the department\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none");
+		System.out.print("DEPARTMENT CODES:\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none\n\nEnter the department: ");
 		
 		// Read the input		
 		Scanner in = new Scanner(System.in);
