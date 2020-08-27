@@ -7,7 +7,10 @@ public class EmailApp {
 		Email email1 = new Email("Moh", "Hoss");
 		
 		
-		email1.setMailboxCapacity(500);
+		// setAlternateEmail and getAlternateEmail in action
+		email1.setAlternateEmail("mhoss@gmail.com");
+		System.out.println("Your Alternate Email is: " + email1.getAlternateEmail());
+		
 	}
 
 }
