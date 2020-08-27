@@ -104,6 +104,11 @@ public class Email {
 	}
 	
 	
+	// Get the mailbox capacity
+	public int getMailboxCapacity() {
+		return mailBoxCapacity;
+	}
+	
 	
 	// Set the alternate email
 	public void setAlternateEmail(String alternateEmail) {
@@ -111,12 +116,25 @@ public class Email {
 	}
 	
 	
+	//Get the alternate email
+	public String getAlternateEmail() {
+		return alternateEmail;
+	}
 	
-	// Change the password
+	
+	
+	// Set changing the password
 	public void changePassword(String password) {
 		this.password = password;
 	}
 
+	
+	// Get the changed password
+	public String getPassword() {
+		return password;
+		
+	}
+	
 
 	
 	
