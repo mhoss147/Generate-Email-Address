@@ -10,6 +10,7 @@ public class Email {
 	private String firstName; 
 	private String lastName;
 	private String password;
+	private int passwordLength = 8;
 	private String department;
 	private int mailBoxCapacity;
 	private String alternateEmail;
@@ -22,8 +23,7 @@ public class Email {
 		// this refer to class level variables and other one is local
 		
 		this.firstName = firstName;
-		this.lastName = lastName;
-		
+		this.lastName = lastName;	
 		
 		// Print to console		
 		System.out.println("EMAIL CREATED: "+ this.firstName + " " + this.lastName + "\n");
@@ -32,6 +32,16 @@ public class Email {
 		// Call a method asking for dept and return the dept
 		this.department = setDepartment();	
 		System.out.println("Department: " + this.department);
+		
+		
+		
+		// Call a method that returns a random password
+		this.password = randomPassword(passwordLength);
+		System.out.println("Your passwoerd is: " + this.password);
+		
+		
+		
+		
 		
 	}
 	
@@ -52,9 +62,28 @@ public class Email {
 		else if (deptChoice == 2) { return "Development"; }
 		else if (deptChoice == 3) { return "Accounting"; }
 		else {	return ""; }
+	}
+
+	
+	// Method to generate random password
+	private String randomPassword(int length) {
 		
+		String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ012345678!@#$%";
+		
+		char[] password = new char[length];
+		
+		for (int i = 0; i < password.length; i++) {
+			
+			int rand = (int) (Math.random() * passwordSet.length());
+			password[i] = passwordSet.charAt(rand);
+					
+		}
+		
+		return new String(password);
 		
 	}
+	
+	
 	
 	
 	// Generate the random password
