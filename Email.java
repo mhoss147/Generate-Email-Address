@@ -75,7 +75,7 @@ public class Email {
 	}
 
 	
-	// Method to generate random password
+	// Private Method to generate random password
 	private String randomPassword(int length) {
 		
 		String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ012345678!@#$%";
