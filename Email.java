@@ -29,7 +29,7 @@ public class Email {
 		this.lastName = lastName;	
 		
 		// Print to console		
-		System.out.println("EMAIL CREATED: "+ this.firstName + " " + this.lastName + "\n");
+		// System.out.println("EMAIL CREATED: "+ this.firstName + " " + this.lastName + "\n");
 		
 		
 		// Call a method asking for dept and return the dept
@@ -47,23 +47,15 @@ public class Email {
 		// Combine elements to generate email
 		email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
 		
-		System.out.println("Your Email is: " + email);
+		// System.out.println("Your Email is: " + email);
 		
-		
-		
-		
-		
-		
-		
+				
 	}
-	
-	
-	
-	
+		
 	// Ask for the department (Don't want a public method) and define it
 	private String setDepartment() {
 		
-		System.out.print("DEPARTMENT CODES:\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none\n\nEnter the department: ");
+		System.out.print("New Employee: " + this.firstName + ", " + "Department Codes:\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none\n\nEnter the department: ");
 		
 		// Read the input		
 		Scanner in = new Scanner(System.in);
@@ -93,10 +85,7 @@ public class Email {
 		
 		return new String(password);
 		
-	}
-	
-	
-	
+	}	
 	
 	// Set the mailbox capacity
 	public void setMailboxCapacity(int capacity) {
@@ -135,8 +124,11 @@ public class Email {
 		
 	}
 	
-
+	public String showInfo() {
+		
+		return "DISPLAY NAME: " + firstName + " " + lastName +
+				"\nCOMPANY EMAIL: " + email +
+				"\nMAILBOX CAPACITY: " + mailboxCapacity + "mb";		
+	}
 	
-	
-
 }
